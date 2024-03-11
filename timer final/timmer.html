@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        body {
+           
+               font-family: Arial, sans-serif;
+            background-image: url('cl.jpg'); 
+            background-size: cover;
+          
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tim {
+            font-size: 3em;
+            background-color: rgba(3, 31, 48, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #startonce{
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #12eba3;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        #stoponce{
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #c40714;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        #resetonce {
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0736c4;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        #startonce:hover{
+            background-color: #03805f;
+        }
+        #stoponce:hover{
+            background-color: #800303;
+        }
+        #resetonce:hover {
+            background-color: #031680;
+        }
+
+
+        #startonce:active, #stoponce:active, #resetonce:active {
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+   
+    <script src="./timmerscript.js"></script>
+    <div class="tim"><span id="coun">00:00:00</span></div>
+    <button id="startonce" onclick="clock()">start</button>
+    <button id="stoponce" onclick="sclock()">stop</button>
+    <button id="resetonce" onclick="rclock()">reset</button>
+</body>
+</html>
